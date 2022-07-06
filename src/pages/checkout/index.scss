@@ -1,0 +1,128 @@
+#checkout-page{
+     flex-direction: row;
+}
+
+#checkout-page h1{
+     font-size: 24px;
+     color: #222222;
+}
+
+#checkout-page h2{
+     margin-top: 8px;
+     font-size: 16px;
+     color: #444444;
+     font-weight: 500;
+}
+
+#checkout-page a{
+     text-decoration: none;
+     color: #2664d6;
+     font-weight: 500;
+}
+
+#checkout-page h2  span{
+     padding: 0px 8px;
+}
+
+#checkout-page h2  span:first-of-type{
+     padding: 0px 8px 0px 0px;
+}
+
+#user-info{
+     padding: 64px 0px 64px 0px;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-end;
+     justify-content: center;
+     flex: 3;
+}
+
+#contact-holder{
+     flex-direction: column !important;
+}
+
+#user-info > div{
+     width: 90%;
+     max-width: 640px;
+     display: flex;
+     flex-direction: column;
+}
+
+#user-info > div > div{
+     width: 90%;
+     max-width: 640px;
+     margin-top: 32px;
+     display: flex;
+     flex-direction: column;
+}
+
+#user-info > div > div:nth-of-type(3){
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+}
+
+#user-info > div > div:nth-of-type(3) > button{
+     width: 90%;
+     max-width: 256px;
+}
+
+#user-info > div > div:first-of-type{
+     margin-top: 0px;
+}
+
+#cart-info{
+     padding: 64px 0px 64px 0px;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     flex: 2;
+     background-color: #e0e0e0;
+     height: 100vh;
+}
+
+#cart-info > div{
+     box-sizing: border-box;
+     padding: 24px;
+     max-width: 384px;
+}
+
+#cart-info > div:first-of-type{
+     width: 100%;
+}
+
+#cart-info > div > p{
+     font-weight: 500;
+     color: #444444;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     width: 100%;
+}
+
+#cart-info > div:nth-child(2), #cart-info > div:nth-child(3){
+     border-top: 1px solid #cccccc;
+     width: 100%;
+}
+
+#cart-info > div > p > span{
+     padding: 0px 8px 0px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+     #checkout-page{
+          flex-direction: column-reverse;
+     }
+
+     #cart-info{
+          height: auto;
+          align-items: center;
+     }
+
+     #root{
+          display: block;
+     }
+}

@@ -1,0 +1,89 @@
+#index-page{
+     flex-direction: column;
+     max-width: 1200px;
+}
+
+#header{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+     width: 90%;
+     height: 48px;
+}
+
+#header > div{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+}
+
+#header > a{
+     width: 32px !important;
+     padding-right: 8px;
+}
+
+#header > div > span{
+     font-weight: 600;
+}
+
+#product-section{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex: 1;
+     width: 90%;
+}
+
+#product-section > div{
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     justify-content: space-between;
+}
+
+#product-section > div > img{
+     display: flex;
+     height: 412px;
+     width: 412px;
+}
+
+#product-section > div > div{
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     justify-content: space-between;
+     max-width: 512px;
+}
+
+#product-section > div > div > div > button:first-of-type{
+     margin-bottom: 8px;
+}
+
+#product-section > div > div{
+     padding-left: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+     #product-section > div{
+          flex-direction: column;
+          align-items: center;
+     }
+
+     #product-section > div > img{
+          height: unset;
+          width: 100%;
+          margin-top: 16px;
+     }
+
+     #product-section > div > div{
+          padding-top: 16px;
+          padding-left: 0px;
+          max-width: unset;
+          width: 100%;
+     }
+
+     #product-section > div > div > *{
+          padding-top: 32px;
+     }
+}

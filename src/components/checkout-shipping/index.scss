@@ -1,0 +1,85 @@
+#user-info > div > div > div{
+     margin-top: 32px;
+     width: 100%;
+     font-weight: 500;
+}
+
+#user-info > div > div > div > p{
+     padding-bottom: 16px;
+}
+
+#user-info > div > div > div:first-of-type{
+     margin-top: 0px;
+}
+
+#contact-holder{
+     display: flex;
+     flex-direction: column;
+     padding: 16px;
+     background-color: #dfdfdf;
+     border-radius: 8px;
+     box-sizing: border-box;
+}
+
+#contact-holder > p{
+     padding-bottom: 12px;
+}
+
+#contact-holder > p:last-of-type{
+     padding-bottom: 0px;
+}
+
+#contact-holder > p > span{
+     color: #666666 !important;
+     padding-right: 8px;
+}
+
+.shipping-method{
+     width: 100%;
+     padding: 16px;
+     background-color: #dfdfdf;
+     box-sizing: border-box;
+     border-bottom: 1px solid #cccccc;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+
+.shipping-method > div{
+     display: flex;
+     flex-direction: row;
+}
+
+.shipping-method > div > div{
+     height: 20px;
+     width: 20px;
+     background-color: #aaaaaa;
+     border-radius: 50%;
+}
+
+.shipping-method  input[type="radio"]{
+     height: 20px;
+     width: 20px;
+     opacity: 0;
+     cursor: pointer;
+}
+
+.shipping-method  input[type="radio"]:checked{
+     border-radius: 50%;
+     border: 2px solid #222222;
+     opacity: 1;
+}
+
+.shipping-method span{
+     margin-left: 8px;
+}
+
+.shipping-method:first-of-type{
+     border-radius: 8px 8px 0px 0px;
+}
+
+.shipping-method:last-of-type{
+     border-radius: 0px 0px 8px 8px;
+     border: none;
+}
